@@ -15,3 +15,11 @@ burger.addEventListener('click', () => {
   menuMiddle.classList.toggle('click');
   menuBottom.classList.toggle('click');
 });
+
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
