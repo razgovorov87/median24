@@ -12,6 +12,11 @@ html {
   /* 2 */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Sections
    ========================================================================== */
 /**
@@ -801,6 +806,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+
 .container {
     display: block;
     width: 80%;
@@ -1181,6 +1187,124 @@ section.contacts .info .social .social-item a {
     transform: rotate(-410deg);
     transition: 0.55s 0.5s;
   }
+
+
+section.profile {
+    padding: 0;
+    background-image: url(../images/gradient.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+
+section.profile .container {
+    padding-top: 180px;
+    display: flex;
+    width: 60%;
+}
+
+section.profile .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 120px;
+}
+
+section.profile .info .img {
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+section.profile .info .img img {
+    width: 100%;
+    height: 100%;
+}
+
+section.profile .info h1 {
+    font-size: 40px;
+}
+
+section.profile .info p {
+    font-size: 16px;
+}
+
+section.profile .detail {
+    width: 100%;
+    max-width: 350px;
+}
+
+section.profile .detail ul li {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.testimonials {
+    background-color: #eee;
+}
+
+.testimonials .section-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 40%;
+    margin: 20px 30px;
+}
+
+.testimonial .text {
+    position: relative;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonial .text:after {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 6%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 15px 0 15px;
+    border-color: #ffffff transparent transparent transparent;
+
+}
+
+.testimonial  .testimonial-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonial  .testimonial-footer .user-info {
+    display: flex;
+    align-items: center;
+}
+.testimonial  .testimonial-footer .user-info img {
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.testimonial  .testimonial-footer .name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.testimonial  .testimonial-footer .star .fas {
+    color: #FFC107
+}
+
+
 
 @media (max-width: 1024px) {
     .header .header-nav .logo {

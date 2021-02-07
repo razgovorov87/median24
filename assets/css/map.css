@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.wrapper {
+    /*padding: 30px;*/
+    display: flex;
+    height: 100%;
+    /*background: rgb(13,156,128);*/
+    /*background: linear-gradient(45deg, rgba(13,156,128,1) 0%, rgba(26,188,156,1) 50%, rgba(13,156,128,1) 100%);*/
+}
+
+span {
+    font-weight: 700;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    display: block;
+    font-size: 14px;
+    width: 14px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.btn.submit {
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.details {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.card {
+    width: 100%;
+}
+#map {
+    width: 100%;
+}
+
+#item__info {
+    transition: .5s ease;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+#item__info.open {
+    transform: scaleY(1);
+}
+
+.item__details .subtitle {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.item__details .subtitle.m0 {
+    margin-bottom: -7px;
+}
+
+.item__details .address span {
+    font-weight: 700;
+}
+
+.item__details .address .coordinates {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.item__details .link {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#download_database {
+    font-weight: 700;
+}
+
+.filter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.filter div{
+    margin-right: 20px;
+}
+
+
+.filter input {
+    margin-right: 10px;
+}
+
+#alert {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 600px;
+}
